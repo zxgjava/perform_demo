@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="perform_demo_suite">
+	<test verbose="2" name="perform_demo_test_first">
+		<!-- 参数定义的方法 -->
+		<parameter name="packageName" value="com.pingan.pinganwifi" />
+		<!-- groups的用法，前提是需要存在classes的组，否则所有方法不被运行 -->
+		<groups>
+			<!-- 定义组中组的方法 -->
+
+		</groups>
+		<classes>
+			<class name="cn.agilean.test.PerformAndroidTest">
+				<methods>
+					<include name="should_return_cpu_by_get_packageName" />
+				</methods>
+			</class> <!-- cn.agilean.test.PerformAndroidTest -->
+		</classes>
+	</test> 
+</suite>
